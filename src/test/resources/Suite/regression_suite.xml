@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="smokeSuite" parallel="tests" thread-count="2">
+	
+	<listeners>
+		<listener class-name="com.eva.vtiger.listeners.TestNGSuitesListener"/>
+		<listener class-name="com.eva.vtiger.listeners.AnnotationTransformer"/>
+	</listeners>
+	
+	<test name="run on chrome">
+		<parameter name="browser" value="chrome"/>
+			 
+			 <classes>
+				<class name="com.eva.vtiger.testscript.smoke1.AccountsSmokeTestcase1">
+					
+				</class>
+			 </classes>
+		
+		 
+	</test>
+	
+	<test name="run on firefox">
+		<parameter name="browser" value="firefox"/>
+			 
+			 <classes>
+				<class name="com.eva.vtiger.testscript.smoke1.LeadsSmokeTestcase1">
+					
+				</class>
+			 </classes>
+			
+	
+		 
+	</test>
+	
+	
+</suite>
+
+
+
+
+
+

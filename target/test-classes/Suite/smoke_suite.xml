@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="smokeSuite" thread-count="3">
+
+	<listeners>
+		<listener class-name="com.eva.vtiger.listeners.TestNGSuitesListener"></listener>
+		<!--		<listener
+		class-name="com.eva.listners.AnnotationTransformer"></listener>-->
+	</listeners>
+
+	<!--	<test name="run on safari">-->
+	<!--		<parameter name ="SmokeTestCase" value="AccountsSmokeTestCase"/>-->
+	<!--		<parameter name="browser" value="chrome" />-->
+	<!--		<classes>-->
+	<!--			<class name="com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1"
+	/>-->
+	<!--			<class name="com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1"
+	/>-->
+
+	<!--		</classes>-->
+	<!--	</test>-->
+	
+	<test name="run on firefox">
+		<parameter name="SmokeTestCase" value="LeadsSmokeTestCase" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1" />
+		</classes>
+	</test>
+
+
+	<test name="run on chrome">
+		<parameter name="SmokeTestCase" value="ContactsSmokeTestCase" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class
+				name="com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1" />
+		</classes>
+	</test>
+
+
+	
+
+</suite>
+
+
+
+

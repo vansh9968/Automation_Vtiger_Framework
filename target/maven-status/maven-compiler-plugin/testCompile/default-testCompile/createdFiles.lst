@@ -3,5 +3,4 @@ com\eva\vtiger\testscript\smoke1\SendMail$1.class
 com\eva\vtiger\testscript\smoke1\ContactsSmokeTestCase1.class
 com\eva\vtiger\testscript\smoke1\test.class
 com\eva\vtiger\testscript\smoke1\LeadsSmokeTestCase1.class
-com\eva\vtiger\testscript\smoke1\BaseTest.class
 com\eva\vtiger\testscript\smoke1\AccountsSmokeTestCase1.class

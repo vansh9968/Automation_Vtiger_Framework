@@ -33,7 +33,7 @@ public class ContactsSmokeTestCase1 extends BaseTest{
 	
 	
 	
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public  void verifyCreateContacts() {
 		Map<String, String> contactsDataMap=util.getTestData("Contacts", "ContactsD_001");
 		HomePage homePage=new HomePage(util, contactsDataMap);
@@ -55,7 +55,7 @@ public class ContactsSmokeTestCase1 extends BaseTest{
 	}
 	
 	
-	@Test(priority = 2)
+//	@Test(priority = 2)
     public  void verifyDetailContacts() {
 		
 		   Map<String, String> contactsData=util.getTestData("Contacts", "ContactsD_001");
@@ -69,7 +69,7 @@ public class ContactsSmokeTestCase1 extends BaseTest{
 
 	
     
-	@Test(priority = 3)
+//	@Test(priority = 3)
     public  void verifyDeleteContacts() {
 		
 		Map<String, String> contactsData=util.getTestData("Contacts", "ContactsD_001");

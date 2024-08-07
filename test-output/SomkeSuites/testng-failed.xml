@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [SomkeSuites]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="run on firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1">
+        <methods>
+          <include name="verifyCreateAccounts"/>
+          <include name="beforeSuite"/>
+          <include name="disconnectFromDB"/>
+          <include name="connectToDB"/>
+          <include name="hitURLAndLogin"/>
+          <include name="afterClass"/>
+          <include name="afterTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1 -->
+    </classes>
+  </test> <!-- run on firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="run on edge(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="verifySearchLeads"/>
+          <include name="disconnectFromDB"/>
+          <include name="connectToDB"/>
+          <include name="hitURLAndLogin"/>
+          <include name="afterClass"/>
+          <include name="afterTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1 -->
+    </classes>
+  </test> <!-- run on edge(failed) -->
+</suite> <!-- Failed suite [SomkeSuites] -->

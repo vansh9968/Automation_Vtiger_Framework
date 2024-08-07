@@ -37,30 +37,21 @@ public class BaseTest {
 		
 	}
 	
-	@Parameters("SmokeTestCase")
+	@Parameters("TestSuite")
 	@BeforeTest
 	public void connectToDB(String suiteName) {
 		
 		System.out.println("connect to database");
-		this.suiteName = suiteName;
-//		util = new WebUtil();
+
 		util.createExtendReports(suiteName);
-//		if(extReport==null) {
-//			util.createExtentReport();
-//		}
-		
+
 	}
 	
 	
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browser) {	 
-//		if(util==null) {
-//			util = new WebUtil();
-//		}
-////		if(extReport==null) {
-//			util.createExtentReport();
-//		}
+
 		util.launchBrowser(browser);
 		
 	}

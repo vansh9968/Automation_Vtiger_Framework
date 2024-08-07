@@ -24,7 +24,7 @@ import javax.mail.internet.MimeMultipart;
 import org.testng.*;
 import org.testng.annotations.Parameters;
 
-import com.eva.vtiger.BaseTest.BaseTest;
+
 
 public class TestNGSuitesListener implements ISuiteListener{
 	public void onStart() {
@@ -32,7 +32,7 @@ public class TestNGSuitesListener implements ISuiteListener{
 	}
 	
 
-	public void onFinish() {
+	public void onFinish(ISuite suite) {
 		System.out.println("#######################################################################");
 		String to="vanshkumar.tester@gmail.com";
 		String from="vanshrathore9968@gmail.com";
@@ -74,7 +74,7 @@ public class TestNGSuitesListener implements ISuiteListener{
             multipart.addBodyPart(messageBodyPart);
             
             messageBodyPart = new MimeBodyPart();
-            String filename = "C:\\Users\\Hacker\\eclipse-QAtester workspace\\Automation_Vtiger_Framework\\Reports\\"+BaseTest.suiteName+".html"; // Replace with the path to the file you want to attach
+            String filename = "C:\\Users\\Hacker\\eclipse-QAtester workspace\\Automation_Vtiger_Framework\\Reports\\"+suite+".html"; // Replace with the path to the file you want to attach
             DataSource source = new FileDataSource(filename);
             messageBodyPart.setDataHandler(new DataHandler(source));
             messageBodyPart.setFileName(new File(filename).getName());

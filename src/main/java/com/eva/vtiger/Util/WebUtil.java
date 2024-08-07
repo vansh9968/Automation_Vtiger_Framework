@@ -749,6 +749,7 @@ public Properties loadProperty(String fileName) {
 			throw e;
 		}
 	}
+	
 
 	/*
 	 * this method will scroll up and down of the page arguments - WebElement locator
@@ -756,18 +757,18 @@ public Properties loadProperty(String fileName) {
 	 * end from scroll) It has no return type
 	 */
 
-//	public void ActionsScrollUpAndDown(int startScroll, int endScroll) throws Exception {
-//		try {
-//			Actions act = new Actions(driver);
-//			// WebElement find=FindElement(driver, location);
-//			act.scrollByAmount(startScroll, endScroll).build().perform();
-//			System.out.println("Scroll up & down of the age pass");
-//		} catch (Exception e) {
-//			System.err.println("No Scroll up & down of the age fail");
+	public void ActionsScrollUpAndDown(int startScroll, int endScroll) throws Exception {
+		try {
+			Actions act = new Actions(driver);
+			// WebElement find=FindElement(driver, location);
+			act.scrollByAmount(startScroll, endScroll).build().perform();
+			System.out.println("Scroll up & down of the age pass");
+		} catch (Exception e) {
+			System.err.println("No Scroll up & down of the age fail");
 //			takeScreenShotAtEndOfTest();
-//			throw e;
-//		}
-//	}
+			throw e;
+		}
+	}
 
 	/******************************* Switch Window Related Methods ***********************************************/
 
@@ -776,7 +777,7 @@ public Properties loadProperty(String fileName) {
 	 * return type
 	 */
 
-	public String SwitchWindowHandle(String windowURL_title) {
+	public String windowHandle(String windowURL_title) {
 		String parentWindow = driver.getWindowHandle();
 		try {
 			Set<String> handlevalue = driver.getWindowHandles();
@@ -796,6 +797,17 @@ public Properties loadProperty(String fileName) {
 			e.printStackTrace();
 		}
 		return parentWindow;
+	}
+	
+	
+	public void switchToWindow(String windowURL_Title) {
+		try {
+			driver.switchTo().window(windowURL_Title);
+		}catch (Exception e) {
+
+			e.printStackTrace();
+		}
+		
 	}
 
 	/*********************************** Alert Related Methods *************************************/

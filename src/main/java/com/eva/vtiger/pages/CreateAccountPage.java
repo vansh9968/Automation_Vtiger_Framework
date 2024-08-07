@@ -34,7 +34,7 @@ public class CreateAccountPage extends CreateAccountPageOR{
 		
 				
 		util.Click(getAddMember());
-		util.SwitchWindowHandle("Popup&popuptype");
+		String mainWindowHandleValue=util.windowHandle("Popup&popuptype");
 		util.validateElementByGetText(getOpenAccountWindow(), "Accounts");
 
 		util.SelectByVisibletext(getSelectBillingCity(), dataMap.get("FieldName"));
@@ -46,8 +46,8 @@ public class CreateAccountPage extends CreateAccountPageOR{
 		WebElement accountLink=util.getDriver().findElement(By.xpath("//td[@class='lvtCol']/parent::tr/following-sibling::tr/td/a[text()='"+accountLinkValue+"']"));
 		util.Click(accountLink);
 		util.alertHandle("ok");
-		util.SwitchWindowHandle("admin - Marketing - Accounts - vtiger CRM 5 - Commercial Open Source CRM");
-		
+		util.sleep(2000);
+		util.switchToWindow(mainWindowHandleValue);
 		
 		
 		String assignTovalue=dataMap.get("AssignTo");

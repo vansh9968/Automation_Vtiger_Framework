@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1">
+      <class name="com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1">
         <methods>
           <include name="afterClass"/>
+          <include name="verifyCreateAccounts"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
-          <include name="verifySearchLeads"/>
           <include name="connectToDB"/>
           <include name="hitURLAndLogin"/>
           <include name="afterTestCase"/>
           <include name="disconnectFromDB"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1 -->
+      </class> <!-- com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

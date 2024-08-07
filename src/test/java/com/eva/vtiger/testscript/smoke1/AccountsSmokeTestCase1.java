@@ -23,7 +23,7 @@ import com.eva.vtiger.pages.LoginPage;
 import com.eva.vtiger.Util.WebUtil;
 import com.eva.vtiger.pages.AccountLandingPage;
 
-@Listeners(com.eva.vtiger.listeners.TestNGSuitesListener.class)
+//@Listeners(com.eva.vtiger.listeners.TestNGSuitesListener.class)
 public class AccountsSmokeTestCase1 extends BaseTest{
 
 //	@DataProvider
@@ -43,22 +43,22 @@ public class AccountsSmokeTestCase1 extends BaseTest{
 	private  AccountLandingPage accountLanding;
 
 	
-	@Test(priority = 0)
+	@Test(description = "" , priority = 0)
 	public  void verifyCreateAccounts() {
 
+//	
 
-		Map<String, String> accountData=util.getTestData("Account", "AD_001");
+		Map<String, String> accountData=util.getTestData("Account", "AD_003");
 		HomePage homePage = new HomePage(util, accountData);
 		accountLanding=homePage.gotoAccountPage();
 		CreateAccountPage createAccount=accountLanding.clickCreateAccountBT();
 		createAccount.fillUpAccountInfo();
 		createAccount.clickSaveButton();
-
 		System.out.println("accounts create ");
 
 	}
 
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public  void verifySearchAccounts() {
 
 		Map<String, String> accountData=util.getTestData("Account", "AD_001");
@@ -68,7 +68,7 @@ public class AccountsSmokeTestCase1 extends BaseTest{
 
 	}
 
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public  void verifyAccountDetails() {
 
 		Map<String, String> accountData=util.getTestData("Account", "AD_001");
@@ -80,7 +80,7 @@ public class AccountsSmokeTestCase1 extends BaseTest{
 	}
 
 
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void verifyAccountIsDelete() {
 
 		Map<String, String> accountData=util.getTestData("Account", "AD_001");

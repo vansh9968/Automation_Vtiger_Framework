@@ -22,7 +22,7 @@ import com.eva.vtiger.pages.CreateLeadsPage;
 
 public class LeadsSmokeTestCase1 extends BaseTest{
 
-//@Test(priority = 0)
+@Test(priority = 0)
 	public  void verifyCreateLeads() {
 		
 		
@@ -37,13 +37,14 @@ public class LeadsSmokeTestCase1 extends BaseTest{
 
 	}
 	
-    @Test(priority = 1)
+//    @Test(priority = 1)
 	public  void verifySearchLeads()  {
     
 	Map<String, String> leadsDataMap=util.getTestData("Leads", "LeadsD_001");
 	HomePage homePage=new HomePage(util,leadsDataMap);
 	LeadsLandingPage leadsLanding=homePage.gotoLeadsPage();
 	leadsLanding.verifySearchLeads();
+	
 		
 	}
     

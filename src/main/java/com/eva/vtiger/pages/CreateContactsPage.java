@@ -15,8 +15,7 @@ public class CreateContactsPage extends CreateContactsPageOR{
 	private WebUtil util;
 	private Map<String, String> dataMap;
 	
-	
-	
+		
 	public CreateContactsPage(WebUtil util, Map<String, String> dataMap) {
 		this.util = util;
 		PageFactory.initElements(util.getDriver(), this);
@@ -24,14 +23,15 @@ public class CreateContactsPage extends CreateContactsPageOR{
 	}
 	
 	public void fillupContactsInfo() {
-		
-
 
 		util.SendKeys(getFirstnameField(), dataMap.get("FirstName"));
 		util.SendKeys(getLastnameField(), dataMap.get("LastName"));
-				
+		util.SendKeys(getEmail(), dataMap.get("Email"));
+		util.SendKeys(getOfficePhone(), dataMap.get("Office Phone"));
+		util.SendKeys(getTitle(), dataMap.get("Title"));
+						
 		util.Click(getAddMember());
-		util.SwitchWindowHandle("Popup&popuptype");
+		String mainWindowHandleValue=util.windowHandle("Popup&popuptype");
 		util.validateElementByGetText(getOpenAccountWindow(), "Accounts");
 
 		util.SelectByVisibletext(getSelectBillingCity(), dataMap.get("FieldName"));
@@ -42,11 +42,10 @@ public class CreateContactsPage extends CreateContactsPageOR{
 		String accountLinkValue=dataMap.get("AccountLink");
 		WebElement accountLink=util.getDriver().findElement(By.xpath("//td[@class='lvtCol']/parent::tr/following-sibling::tr/td/a[text()='"+accountLinkValue+"']"));
 		util.Click(accountLink);
-		util.alertHandle("ok");
-		util.SwitchWindowHandle("admin - Marketing - Accounts - vtiger CRM 5 - Commercial Open Source CRM");
-		
-		String assignTovalue=dataMap.get("AssignTo");
-		if(assignTovalue.equalsIgnoreCase("group")) {
+		util.switchToWindow(mainWindowHandleValue);
+
+		String assignTo=dataMap.get("AssignTo");
+		if(assignTo.equalsIgnoreCase("group")) {
 			util.Click(getGroupBT());
 			util.SelectByVisibletext(getGroupValue(), dataMap.get("AssignToValue"));
 		}else {
@@ -54,15 +53,11 @@ public class CreateContactsPage extends CreateContactsPageOR{
 
 		}
 		
-		util.SendKeys(getEmail(), dataMap.get("Email"));
-		util.SendKeys(getOfficePhone(), dataMap.get("Office Phone"));
-		util.SendKeys(getTitle(), dataMap.get("Title"));
-		
 	}
 
 	public void clickSaveButton(){
 		util.Click(getSaveButton());
-		util.alertHandle("ok");
+//		util.alertHandle("ok");
 	}
 
 	public void clickCancelButton() {

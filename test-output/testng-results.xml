@@ -1,283 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="0" failed="1" skipped="4">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-03T18:30:49 IST" name="smokeSuite" finished-at="2024-08-03T18:31:17 IST" duration-ms="28245">
+  <suite started-at="2024-08-06T19:20:33 IST" name="SmokeSuite" finished-at="2024-08-06T19:20:45 IST" duration-ms="11629">
     <groups>
     </groups>
-    <test started-at="2024-08-03T18:30:49 IST" name="run on firefox" finished-at="2024-08-03T18:30:49 IST" duration-ms="52">
-      <class name="com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1">
-        <test-method is-config="true" signature="connectToDB(java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@3023df74]" started-at="2024-08-03T18:30:49 IST" name="connectToDB" finished-at="2024-08-03T18:30:49 IST" duration-ms="4" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[LeadsSmokeTestCase]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.eva.vtiger.Util.WebUtil.createExtendReports(String)" because "this.util" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.eva.vtiger.Util.WebUtil.createExtendReports(String)" because "this.util" is null
-at com.eva.vtiger.BaseTest.BaseTest.connectToDB(BaseTest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@3023df74]" started-at="2024-08-03T18:30:49 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690049571" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@3023df74]" started-at="2024-08-03T18:30:49 IST" name="hitURLAndLogin" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690049581" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifySearchLeads()[pri:1, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@3023df74]" started-at="2024-08-03T18:30:49 IST" name="verifySearchLeads" finished-at="2024-08-03T18:30:49 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.eva.vtiger.Util.WebUtil.createExtendReports(String)" because "this.util" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.eva.vtiger.Util.WebUtil.createExtendReports(String)" because "this.util" is null
-at com.eva.vtiger.BaseTest.BaseTest.connectToDB(BaseTest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchLeads -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@3023df74]" started-at="2024-08-03T18:30:49 IST" name="afterTestCase" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690049587" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@3023df74]" started-at="2024-08-03T18:30:49 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690049591" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@3023df74]" started-at="2024-08-03T18:30:49 IST" name="disconnectFromDB" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690049594" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disconnectFromDB -->
-      </class> <!-- com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1 -->
-    </test> <!-- run on firefox -->
-    <test started-at="2024-08-03T18:30:49 IST" name="run on chrome" finished-at="2024-08-03T18:31:17 IST" duration-ms="28132">
+    <test started-at="2024-08-06T19:20:33 IST" name="run on chrome" finished-at="2024-08-06T19:20:45 IST" duration-ms="11629">
       <class name="com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:30:49 IST" name="beforeSuite" finished-at="2024-08-03T18:30:49 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:33 IST" name="beforeSuite" finished-at="2024-08-06T19:20:33 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="connectToDB(java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:30:49 IST" name="connectToDB" finished-at="2024-08-03T18:30:49 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="connectToDB(java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:33 IST" name="connectToDB" finished-at="2024-08-06T19:20:33 IST" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactsSmokeTestCase]]>
+                <![CDATA[ContactsSmokeTestCase1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:30:49 IST" name="beforeClass" finished-at="2024-08-03T18:30:51 IST" duration-ms="1554" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:33 IST" name="beforeClass" finished-at="2024-08-06T19:20:37 IST" duration-ms="3331" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:30:51 IST" name="hitURLAndLogin" finished-at="2024-08-03T18:30:54 IST" duration-ms="3603" status="PASS">
+        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:37 IST" name="hitURLAndLogin" finished-at="2024-08-06T19:20:39 IST" duration-ms="2620" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1.verifyCreateContacts()]]>
+                <![CDATA[public void com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1.verifySearchContacts()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifyCreateContacts()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:30:54 IST" name="verifyCreateContacts" finished-at="2024-08-03T18:31:01 IST" duration-ms="6830" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1163)
-at com.eva.vtiger.Util.WebUtil.alertHandle(WebUtil.java:811)
-at com.eva.vtiger.pages.CreateContactsPage.fillupContactsInfo(CreateContactsPage.java:45)
-at com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1.verifyCreateContacts(ContactsSmokeTestCase1.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifySearchContacts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:39 IST" name="verifySearchContacts" finished-at="2024-08-06T19:20:44 IST" duration-ms="5099" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCreateContacts -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="afterTestCase" finished-at="2024-08-03T18:31:01 IST" duration-ms="15" status="FAIL">
+        </test-method> <!-- verifySearchContacts -->
+        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:44 IST" name="afterTestCase" finished-at="2024-08-06T19:20:44 IST" duration-ms="29" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCreateContacts status=FAILURE method=ContactsSmokeTestCase1.verifyCreateContacts()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2] output={null}]]]>
+                <![CDATA[[TestResult name=verifySearchContacts status=SUCCESS method=ContactsSmokeTestCase1.verifySearchContacts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1.verifyCreateContacts()]]>
+                <![CDATA[public void com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1.verifySearchContacts()]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
+              <![CDATA[Unexpected alert dialog detected. Performed handler "dismiss": 
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [141563f7-1ffd-440e-bccf-6e91c993ed24, findElement {using=xpath, value=//a[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0, moz:accessibilityChecks: false, moz:buildID: 20240801122119, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23208, moz:profile: C:\Users\Hacker\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 141563f7-1ffd-440e-bccf-6e91c993ed24]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler "dismiss": 
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [141563f7-1ffd-440e-bccf-6e91c993ed24, findElement {using=xpath, value=//a[text()='Sign Out']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0, moz:accessibilityChecks: false, moz:buildID: 20240801122119, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23208, moz:profile: C:\Users\Hacker\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 141563f7-1ffd-440e-bccf-6e91c993ed24
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-at com.eva.vtiger.Util.WebUtil.takeScreenShot(WebUtil.java:260)
-at com.eva.vtiger.BaseTest.BaseTest.afterTestCase(BaseTest.java:86)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at com.eva.vtiger.Util.WebUtil.Click(WebUtil.java:413)
+at com.eva.vtiger.pages.LoginPage.logout(LoginPage.java:39)
+at com.eva.vtiger.BaseTest.BaseTest.afterTestCase(BaseTest.java:81)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -313,284 +130,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="hitURLAndLogin" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690061862" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifySearchContacts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="verifySearchContacts" finished-at="2024-08-03T18:31:01 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-at com.eva.vtiger.Util.WebUtil.takeScreenShot(WebUtil.java:260)
-at com.eva.vtiger.BaseTest.BaseTest.afterTestCase(BaseTest.java:86)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchContacts -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="afterTestCase" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690061876" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="hitURLAndLogin" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690061879" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifyDetailContacts()[pri:2, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="verifyDetailContacts" finished-at="2024-08-03T18:31:01 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-at com.eva.vtiger.Util.WebUtil.takeScreenShot(WebUtil.java:260)
-at com.eva.vtiger.BaseTest.BaseTest.afterTestCase(BaseTest.java:86)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDetailContacts -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="afterTestCase" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690061889" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="hitURLAndLogin" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690061892" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifyDeleteContacts()[pri:3, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="verifyDeleteContacts" finished-at="2024-08-03T18:31:01 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=127.0.6533.88)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73d2237e67020f1ee56fb661c06b9ea6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Hacker\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52581/devtoo..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d2237e67020f1ee56fb661c06b9ea6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-at com.eva.vtiger.Util.WebUtil.takeScreenShot(WebUtil.java:260)
-at com.eva.vtiger.BaseTest.BaseTest.afterTestCase(BaseTest.java:86)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteContacts -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="afterTestCase" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690061897" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722690061904" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:44 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1722952244878" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:01 IST" name="disconnectFromDB" finished-at="2024-08-03T18:31:17 IST" duration-ms="15883" status="PASS">
+        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:44 IST" name="disconnectFromDB" finished-at="2024-08-06T19:20:45 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disconnectFromDB -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@75d4a5c2]" started-at="2024-08-03T18:31:17 IST" name="afterSuite" finished-at="2024-08-03T18:31:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@59662a0b]" started-at="2024-08-06T19:20:45 IST" name="afterSuite" finished-at="2024-08-06T19:20:45 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1 -->
     </test> <!-- run on chrome -->
-  </suite> <!-- smokeSuite -->
+  </suite> <!-- SmokeSuite -->
 </testng-results>

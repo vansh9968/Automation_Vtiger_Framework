@@ -3,6 +3,7 @@ com\eva\vtiger\pageOR\ContactsLandingPageOR.class
 com\eva\vtiger\pageOR\CreateContactsPageOR.class
 com\eva\vtiger\pageOR\LeadsDetailPageOR.class
 com\eva\vtiger\pages\ContactsDetailsPage.class
+com\eva\vtiger\BaseTest\BaseTest.class
 com\eva\vtiger\pageOR\ContactsDetailPageOR.class
 com\eva\vtiger\listeners\TestNGSuitesListener$1.class
 com\eva\vtiger\pages\CreateAccountPage.class

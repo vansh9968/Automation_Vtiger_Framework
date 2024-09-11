@@ -44,7 +44,7 @@ public class CreateAccountPageOR {
 	@FindBy(xpath = "//td[text()='Website 			']//following-sibling::td/input[@name='website']")
 	private WebElement website;
 	
-	@FindBy(xpath = "//td[text()='Email ']//following-sibling::td/input[@id='']")
+	@FindBy(xpath = "//td[text()='Email ']//following-sibling::td/input[@id='email1']")
 	private WebElement email;
 
 	@FindBy(xpath = "(//input[@value='  Save  '])[1]")

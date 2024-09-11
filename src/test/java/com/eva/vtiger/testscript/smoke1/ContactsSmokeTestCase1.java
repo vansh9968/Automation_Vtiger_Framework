@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import com.eva.vtiger.pages.HomePage;
 import com.eva.vtiger.pages.LeadDetailsPage;
 import com.eva.vtiger.pages.LeadsLandingPage;
-import com.eva.vtiger.BaseTest.BaseTest;
 import com.eva.vtiger.Util.WebUtil;
 import com.eva.vtiger.pages.ContactsDetailsPage;
 import com.eva.vtiger.pages.ContactsLandingPage;

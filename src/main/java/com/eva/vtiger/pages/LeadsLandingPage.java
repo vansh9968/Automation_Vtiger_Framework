@@ -39,12 +39,16 @@ public class LeadsLandingPage extends LeadsLandingPageOR{
 		String lastName=dataMap.get("LastName");
 		util.SendKeys(getSearchTextField(), lastName);
 		util.Click(getSearchBT());
-		WebElement le=util.getDriver().findElement(By.xpath("//a[text()='Last Name']//parent::td//parent::tr//following-sibling::tr//td//a[text()='"+lastName+"']"));
-	    boolean leads= util.isDisplay(le);
+		boolean leads=false;
+		WebElement le=null;
+		try {
+		 le=util.getDriver().findElement(By.xpath("//a[text()='Last Name']//parent::td//parent::tr//following-sibling::tr//td//a[text()='"+lastName+"']"));
+	     leads= util.isDisplay(le);
+		}catch(Exception e) {
+			System.out.println("No found Account !");
+		}
 		if(leads==true) {
 			util.Click(le);
-		}else {
-			System.out.println("No found Account !");
 		}
 		leadsDetail=new LeadDetailsPage(util, dataMap);
 		return leadsDetail;

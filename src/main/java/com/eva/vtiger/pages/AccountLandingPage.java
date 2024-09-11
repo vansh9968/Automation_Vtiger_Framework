@@ -39,12 +39,16 @@ public class AccountLandingPage extends AccountLandingPageOR{
 		String accountname=dataMap.get("AccountName");
 		util.SendKeys(getSearchTextBox(), accountname);
 		util.Click(getSearchBT());
-		WebElement acc=util.getDriver().findElement(By.xpath("//a[text()='Account Name']//parent::td//parent::tr//following-sibling::tr//td//a[text()='"+accountname+"']"));
-	    boolean account= util.isDisplay(acc);
+		boolean account=false;
+		WebElement acc=null;
+		try {
+		 acc=util.getDriver().findElement(By.xpath("//a[text()='Account Name']//parent::td//parent::tr//following-sibling::tr//td//a[text()='"+accountname+"']"));
+			account= util.isDisplay(acc);
+		}catch(Exception e) {
+			System.out.println("No found Account !");
+		}
 		if(account==true) {
 			util.Click(acc);
-		}else if(account==false){
-			System.out.println("No found Account !");
 		}
 		accountDetail=new AccountDetailsPage(util, dataMap);
 		return accountDetail;		

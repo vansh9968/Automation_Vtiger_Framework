@@ -11,7 +11,6 @@ import org.testng.annotations.Parameters;
 //import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
-import com.eva.vtiger.BaseTest.BaseTest;
 import com.eva.vtiger.Util.WebUtil;
 import com.eva.vtiger.pages.HomePage;
 import com.eva.vtiger.pages.LeadDetailsPage;
@@ -22,7 +21,7 @@ import com.eva.vtiger.pages.CreateLeadsPage;
 
 public class LeadsSmokeTestCase1 extends BaseTest{
 
-@Test(priority = 0)
+//@Test(priority = 0)
 	public  void verifyCreateLeads() {
 		
 		
@@ -37,7 +36,7 @@ public class LeadsSmokeTestCase1 extends BaseTest{
 
 	}
 	
-//    @Test(priority = 1)
+    @Test(priority = 1)
 	public  void verifySearchLeads()  {
     
 	Map<String, String> leadsDataMap=util.getTestData("Leads", "LeadsD_001");

@@ -24,6 +24,7 @@ public class AccountDetailsPage extends AccountDetailPageOR{
 	
 	public void clickDeleteButton() {
 		util.Click(getDeleteBT());
+		
 	}
 
 	public void clickDuplicateButton() {

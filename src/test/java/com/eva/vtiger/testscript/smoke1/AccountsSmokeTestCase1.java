@@ -14,7 +14,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.eva.vtiger.BaseTest.BaseTest;
 import com.eva.vtiger.Util.WebUtil;
 import com.eva.vtiger.pages.AccountDetailsPage;
 import com.eva.vtiger.pages.CreateAccountPage;
@@ -43,12 +42,12 @@ public class AccountsSmokeTestCase1 extends BaseTest{
 	private  AccountLandingPage accountLanding;
 
 	
-	@Test(description = "" , priority = 0)
+//	@Test(description = "" , priority = 0)
 	public  void verifyCreateAccounts() {
 
 //	
 
-		Map<String, String> accountData=util.getTestData("Account", "AD_003");
+		Map<String, String> accountData=util.getTestData("Account", "AD_004");
 		HomePage homePage = new HomePage(util, accountData);
 		accountLanding=homePage.gotoAccountPage();
 		CreateAccountPage createAccount=accountLanding.clickCreateAccountBT();
@@ -58,10 +57,10 @@ public class AccountsSmokeTestCase1 extends BaseTest{
 
 	}
 
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public  void verifySearchAccounts() {
 
-		Map<String, String> accountData=util.getTestData("Account", "AD_001");
+		Map<String, String> accountData=util.getTestData("Account", "AD_003");
 		HomePage homePage = new HomePage(util, accountData);
 		accountLanding=homePage.gotoAccountPage();
 		accountLanding.verifySearchAccount();

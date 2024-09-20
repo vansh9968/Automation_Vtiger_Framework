@@ -1,168 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-19T17:19:39 IST" name="SmokeSuite" finished-at="2024-09-19T17:22:15 IST" duration-ms="155609">
+  <suite started-at="2024-09-20T12:42:20 IST" name="SmokeSuite" finished-at="2024-09-20T12:43:04 IST" duration-ms="44479">
     <groups>
     </groups>
-    <test started-at="2024-09-19T17:19:39 IST" name="ContactsSmokeTestCase1" finished-at="2024-09-19T17:21:38 IST" duration-ms="118537">
-      <class name="com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:19:39 IST" name="beforeSuite" finished-at="2024-09-19T17:19:39 IST" duration-ms="18" status="PASS">
+    <test started-at="2024-09-20T12:42:20 IST" name="AccountsSmokeTestCase1" finished-at="2024-09-20T12:43:04 IST" duration-ms="44479">
+      <class name="com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:42:20 IST" name="beforeSuite" finished-at="2024-09-20T12:42:20 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="connectToDB(org.testng.ITestContext)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:19:39 IST" name="connectToDB" finished-at="2024-09-19T17:19:40 IST" duration-ms="681" status="PASS">
+        <test-method is-config="true" signature="connectToDB(org.testng.ITestContext)[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:42:20 IST" name="connectToDB" finished-at="2024-09-20T12:42:20 IST" duration-ms="415" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@609db43b]]>
+                <![CDATA[org.testng.TestRunner@5740ff5e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:19:40 IST" name="beforeClass" finished-at="2024-09-19T17:19:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:42:20 IST" name="beforeClass" finished-at="2024-09-20T12:42:20 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:19:40 IST" name="hitURLAndLogin" finished-at="2024-09-19T17:20:34 IST" duration-ms="54001" status="PASS">
+        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:42:20 IST" name="hitURLAndLogin" finished-at="2024-09-20T12:42:41 IST" duration-ms="20279" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1.verifySearchContacts()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifySearchContacts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:20:34 IST" name="verifySearchContacts" finished-at="2024-09-19T17:21:34 IST" duration-ms="60209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchContacts -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:21:34 IST" name="afterTestCase" finished-at="2024-09-19T17:21:36 IST" duration-ms="2095" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchContacts status=SUCCESS method=ContactsSmokeTestCase1.verifySearchContacts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1.verifySearchContacts()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Unexpected alert dialog detected. Performed handler "dismiss": 
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b74f8bd1-c709-435e-a634-584c062e11ce, findElement {using=xpath, value=//a[text()='Sign Out']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13916, moz:profile: C:\Users\Hacker\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b74f8bd1-c709-435e-a634-584c062e11ce]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler "dismiss": 
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [b74f8bd1-c709-435e-a634-584c062e11ce, findElement {using=xpath, value=//a[text()='Sign Out']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13916, moz:profile: C:\Users\Hacker\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: b74f8bd1-c709-435e-a634-584c062e11ce
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-at com.eva.vtiger.Util.WebUtil.Click(WebUtil.java:413)
-at com.eva.vtiger.pages.LoginPage.logout(LoginPage.java:39)
-at com.eva.vtiger.testscript.smoke1.BaseTest.afterTestCase(BaseTest.java:79)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:21:36 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1726746696910" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:21:36 IST" name="disconnectFromDB" finished-at="2024-09-19T17:21:38 IST" duration-ms="1445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disconnectFromDB -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1@639c2c1d]" started-at="2024-09-19T17:22:15 IST" name="afterSuite" finished-at="2024-09-19T17:22:15 IST" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.eva.vtiger.testscript.smoke1.ContactsSmokeTestCase1 -->
-    </test> <!-- ContactsSmokeTestCase1 -->
-    <test started-at="2024-09-19T17:19:39 IST" name="LeadsSmokeTestCase1" finished-at="2024-09-19T17:22:10 IST" duration-ms="150306">
-      <class name="com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1">
-        <test-method is-config="true" signature="connectToDB(org.testng.ITestContext)[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c]" started-at="2024-09-19T17:19:39 IST" name="connectToDB" finished-at="2024-09-19T17:19:40 IST" duration-ms="681" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@55f616cf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c]" started-at="2024-09-19T17:19:40 IST" name="beforeClass" finished-at="2024-09-19T17:19:40 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c]" started-at="2024-09-19T17:19:40 IST" name="hitURLAndLogin" finished-at="2024-09-19T17:20:59 IST" duration-ms="78825" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1.verifySearchLeads()]]>
+                <![CDATA[public void com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1.verifySearchAccounts()]]>
               </value>
             </param>
             <param index="1">
@@ -174,78 +42,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifySearchLeads()[pri:1, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c]" started-at="2024-09-19T17:20:59 IST" name="verifySearchLeads" finished-at="2024-09-19T17:21:58 IST" duration-ms="59499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchLeads -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c]" started-at="2024-09-19T17:21:58 IST" name="afterTestCase" finished-at="2024-09-19T17:22:09 IST" duration-ms="10296" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchLeads status=SUCCESS method=LeadsSmokeTestCase1.verifySearchLeads()[pri:1, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1.verifySearchLeads()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c]" started-at="2024-09-19T17:22:09 IST" name="afterClass" finished-at="2024-09-19T17:22:09 IST" duration-ms="785" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1@1b7cc17c]" started-at="2024-09-19T17:22:09 IST" name="disconnectFromDB" finished-at="2024-09-19T17:22:10 IST" duration-ms="170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disconnectFromDB -->
-      </class> <!-- com.eva.vtiger.testscript.smoke1.LeadsSmokeTestCase1 -->
-    </test> <!-- LeadsSmokeTestCase1 -->
-    <test started-at="2024-09-19T17:19:39 IST" name="AccountsSmokeTestCase1" finished-at="2024-09-19T17:22:15 IST" duration-ms="155609">
-      <class name="com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1">
-        <test-method is-config="true" signature="connectToDB(org.testng.ITestContext)[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18]" started-at="2024-09-19T17:19:39 IST" name="connectToDB" finished-at="2024-09-19T17:19:40 IST" duration-ms="674" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1356d4d4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18]" started-at="2024-09-19T17:19:40 IST" name="beforeClass" finished-at="2024-09-19T17:19:40 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="hitURLAndLogin(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18]" started-at="2024-09-19T17:19:40 IST" name="hitURLAndLogin" finished-at="2024-09-19T17:21:02 IST" duration-ms="81492" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1.verifySearchAccounts()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hitURLAndLogin -->
-        <test-method signature="verifySearchAccounts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18]" started-at="2024-09-19T17:21:02 IST" name="verifySearchAccounts" finished-at="2024-09-19T17:21:58 IST" duration-ms="56804" status="PASS">
+        <test-method signature="verifySearchAccounts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:42:41 IST" name="verifySearchAccounts" finished-at="2024-09-20T12:43:00 IST" duration-ms="18895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchAccounts -->
-        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18]" started-at="2024-09-19T17:21:58 IST" name="afterTestCase" finished-at="2024-09-19T17:22:12 IST" duration-ms="13963" status="PASS">
+        <test-method is-config="true" signature="afterTestCase(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:43:00 IST" name="afterTestCase" finished-at="2024-09-20T12:43:04 IST" duration-ms="4070" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchAccounts status=SUCCESS method=AccountsSmokeTestCase1.verifySearchAccounts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18] output={null}]]]>
+                <![CDATA[[TestResult name=verifySearchAccounts status=SUCCESS method=AccountsSmokeTestCase1.verifySearchAccounts()[pri:1, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -257,14 +62,18 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestCase -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18]" started-at="2024-09-19T17:22:12 IST" name="afterClass" finished-at="2024-09-19T17:22:15 IST" duration-ms="2450" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:43:04 IST" name="afterClass" finished-at="2024-09-20T12:43:04 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@59474f18]" started-at="2024-09-19T17:22:15 IST" name="disconnectFromDB" finished-at="2024-09-19T17:22:15 IST" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:43:04 IST" name="disconnectFromDB" finished-at="2024-09-20T12:43:04 IST" duration-ms="516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disconnectFromDB -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1@1b7cc17c]" started-at="2024-09-20T12:43:05 IST" name="afterSuite" finished-at="2024-09-20T12:43:05 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1 -->
     </test> <!-- AccountsSmokeTestCase1 -->
   </suite> <!-- SmokeSuite -->

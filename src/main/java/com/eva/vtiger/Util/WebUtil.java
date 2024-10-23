@@ -18,7 +18,6 @@ import java.util.Set;
 import javax.net.ssl.HttpsURLConnection;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.hpsf.Property;
-//import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Row.MissingCellPolicy;
@@ -51,7 +50,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import lombok.Getter;
 import lombok.Setter;
  
@@ -68,10 +68,11 @@ private ExtentTest extTest;
 private WebDriverWait wait;
 
 private ExtentReports extendReport;
-//private Logger log;
+private Logger log;
 
 public WebUtil() {
-//	log=Logger.getLogger(WebUtil.class);
+	log=LogManager.getLogger(WebUtil.class);
+//	log.info("helllohjaskxjzb");
 }
 
 

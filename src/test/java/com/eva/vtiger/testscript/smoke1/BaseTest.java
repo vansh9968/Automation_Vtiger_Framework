@@ -53,10 +53,10 @@ public class BaseTest {
 	}
 	
 	
-	@Parameters("browser")
+//	@Parameters("browser")
 	@BeforeMethod
-	public void hitURLAndLogin(Method mt,String browser) {
-		util.launchBrowser(browser);
+	public void hitURLAndLogin(Method mt) { //,String browser) {
+		util.launchBrowser("chrome");
 
 		String testCaseName=mt.getName();
 		util.createTest(testCaseName);

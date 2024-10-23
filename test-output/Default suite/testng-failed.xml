@@ -6,12 +6,12 @@
       <class name="com.eva.vtiger.testscript.smoke1.AccountsSmokeTestCase1">
         <methods>
           <include name="afterClass"/>
+          <include name="verifyCreateAccounts"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
           <include name="connectToDB"/>
           <include name="hitURLAndLogin"/>
           <include name="afterTestCase"/>
-          <include name="verifySearchAccounts"/>
           <include name="disconnectFromDB"/>
           <include name="beforeClass"/>
         </methods>
